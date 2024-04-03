@@ -26,7 +26,15 @@ public class Quiz {
 	}
 	
 	public void takeQuiz() {
-		//FIXME
+		super(prompt, answer, points);
+		Question.displayPrompt();
+		getUserAnswer();
+		super(prompt, answer, points, choices);
+		MultipleChoiceQuestion.displayPrompt();
+		getUserAnswer();
+		super(prompt, answer, 1, choices);
+		SelectAllQuestion.displayPrompt();
+		getUserAnswer();			
 	}
 	
 	public static void main(String[] args) {
